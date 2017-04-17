@@ -1,0 +1,3 @@
+boda:
+    resource: "@BodaBundle/Resources/config/routing.yml"
+    prefix:   /
