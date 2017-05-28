@@ -31,8 +31,8 @@ class AppKernel extends Kernel
             
             new Ps\PdfBundle\PsPdfBundle(),            
             
-            new Backend\BackendBundle\BackendBundle(),
-            new Core\ApiBundle\CoreApiBundle(),
+            // new Backend\BackendBundle\BackendBundle(),
+            // new Core\ApiBundle\CoreApiBundle(),
 
             new App\AppBundle\AppBundle(),
         );

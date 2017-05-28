@@ -2,9 +2,13 @@ app:
     resource: "@AppBundle/Resources/config/routing.yml"
     prefix:   /
 
-core_api:
-    resource: '@CoreApiBundle/Resources/config/routing.yml'
-    prefix:   /api/
+# app:
+#     resource: "@AppBundle/Resources/config/routing.yml"
+#     prefix:   /
+
+# core_api:
+#     resource: '@CoreApiBundle/Resources/config/routing.yml'
+#     prefix:   /api/
 
 gallery:
     resource: '@SonataMediaBundle/Resources/config/routing/gallery.xml'
