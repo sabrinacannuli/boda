@@ -1,3 +1,0 @@
-boda_homepage:
-    path:     /
-    defaults: { _controller: BodaBundle:Default:index }
