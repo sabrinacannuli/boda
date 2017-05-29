@@ -1,3 +1,9 @@
-.preba{
-	color:black;
+.top{
+	position: relative;
+	max-height: 600px;
+	overflow: hidden;
+	img{
+		margin-top: -60px;
+		width:100%;
+	}
 }
