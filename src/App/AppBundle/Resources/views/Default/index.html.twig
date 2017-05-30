@@ -8,7 +8,18 @@
     	<div class="row">
     		<div class="top">
     			<img src="{{asset('bundles/app/images/primera.jpg')}}" alt="Sabri y Alexis">
-				<div id="countdown"></div><!-- /#Countdown Div -->
+    			<div class="row contCount">
+    				<div class="col-md-12">
+    					<div class="row">
+    						<div class="col-md-5">
+    							<p class="titleCount">Vení a festejar con nosotros, solo falta...</p>
+    						</div>
+    						<div class="col-md-7">
+								<div id="countdown"></div><!-- /#Countdown Div -->
+    						</div>
+    					</div>
+    				</div>
+    			</div>
     		</div>
     	</div>
     </div>
@@ -38,8 +49,18 @@
 		    minutes = parseInt(seconds_left / 60);
 		    seconds = parseInt(seconds_left % 60);
 		    // format countdown string + set tag value
-		    countdown.innerHTML = '<span class="days">' + days +  ' <b>Days</b></span> <span class="hours">' + hours + ' <b>Hours</b></span> <span class="minutes">'
-		    + minutes + ' <b>Minutes</b></span> <span class="seconds">' + seconds + ' <b>Seconds</b></span>';  	 
+		    countdown.innerHTML = 
+		    	'<span style="float:left;text-align:center;" class="days">'+ days +
+		    		'<b style="font-size:15px;display:block;">días</b></span>'+
+
+		    	'<span style="float:left;text-align:center;" class="hours">' + hours + 
+		    		'<b style="font-size:15px;display:block;">horas</b></span>'+
+
+		    	'<span style="float:left;text-align:center;" class="minutes">' + minutes + 
+		    		'<b style="font-size:15px;display:block;">minutos</b></span>'+
+
+		    	'<span style="float:left;text-align:center;" class="seconds">' + seconds + 
+		    		'<b style="font-size:15px;display:block;">segundos</b></span>';  	 
 		}, 1000);
 	</script>
 {% endblock %}
