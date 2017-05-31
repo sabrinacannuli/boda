@@ -6,7 +6,7 @@
 {% block body %}
     <div class="container-fluid">
     	<div class="row">
-    		<div class="top">
+    		<section class="top">
     			<img src="{{asset('bundles/app/images/primera.jpg')}}" alt="Sabri y Alexis">
     			<div class="row contCount">
     				<div class="col-md-12">
@@ -36,7 +36,44 @@
 						<a href="" class="down col-md-12 text-center"><span class="glyphicon glyphicon-menu-down"></span></a>
 	    			</div>
     			</div>
-    		</div>
+    		</section>
+    		<section class="menu container">
+    			<div class="row">
+    				<div class="col-md-4">
+    					<a href="#">
+	    					<p class="title col-sm-12 text-center">La Iglesia</p>
+	    					<img src="{{asset('bundles/app/images/menu01.png')}}" alt="">
+    					</a>
+    				</div>
+    				<div class="col-md-4">
+    					<a href="#">
+	    					<p class="title col-sm-12 text-center">La Fiesta</p>
+	    					<img src="{{asset('bundles/app/images/menu02.png')}}" alt="">
+    					</a>
+    				</div>
+    				<div class="col-md-4">
+    					<a href="#">
+	    					<p class="title col-sm-12 text-center">Regalos</p>
+	    					<img src="{{asset('bundles/app/images/menu03.png')}}" alt="">
+    					</a>
+    				</div>
+    			</div>
+    		</section>
+    		<section class="col-sm-12 ubicaciones">	
+				<div class="row">	
+					<div class="col-md-6">	
+						<h3 class="titile">La Iglesia</h3>
+						<div class="info">
+							Iglesia San Isidro <br>
+							Av. Libertador 1598	<br>
+							19.30 hs
+						</div>
+					</div>
+					<div class="col-md-6">	
+					
+					</div>
+				</div>
+    		</section>
     	</div>
     </div>
 {% endblock %}

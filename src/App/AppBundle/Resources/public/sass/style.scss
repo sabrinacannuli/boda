@@ -33,7 +33,7 @@
 	}
 	.contCount{
 		position:absolute;
-		bottom: 0px;
+		bottom: 0px; 
 		left: 0px;
 		padding: 0 10%;
 		width:100%;
@@ -127,4 +127,43 @@
 		}
 	}
 }
+.menu{
+	padding: 15px 0;
+	a{
+		text-align:center;
+		float: left;
+		overflow: hidden;
+		transition: all .7s;
+		.title{
+			padding: 0;
+			margin: 0;
+			font-size: 40px;
+			color: $color1;
+			font-family: 'Great Vibes';
+		}
+		img{
+			width: 70%;
+			margin: 0 auto;
+		}
+		&:after{
+			background-image:url('../images/line02.png');
+		    background-size: 70%;
+		    width: 100%;
+		    content: "";
+		    bottom: 0px; 
+		    float: left;
+		    left: 0;
+		    background-repeat: no-repeat;
+			background-position: center;
+			height: 60px;
+		}
+		&:hover{
+			opacity: .7;
+		}
+	}
+}
+.ubicaciones{
+	background:$color1;
+	height: 500px;
 
+}
