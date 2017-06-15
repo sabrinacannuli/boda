@@ -6,75 +6,99 @@
 {% block body %}
     <div class="container-fluid">
     	<div class="row">
-    		<section class="top">
-    			<img src="{{asset('bundles/app/images/primera.jpg')}}" alt="Sabri y Alexis">
-    			<div class="row contCount">
-    				<div class="col-md-12">
-    					<div class="row">
-    						<div class="col-md-5">
-    							<p class="titleCount">Vení a festejar con nosotros, solo falta...</p>
-    						</div>
-    						<div class="col-md-7">
-								<div id="countdown"></div><!-- /#Countdown Div -->
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="welcome col-md-3">
-	    			<div class="row">
-	    				<div class="sya col-md-12">
-	    					<p>Sabri y Alexis</p>
-	    				</div>
-	    				<div class="invitacion col-md-12">
-	    					<p>Hola Sol y Fer <br> queremos invitarlos a <span>¡nuestro casamiento!</span></p>
-	    				</div>
-	    				<div class="ctaConfirm col-md-12">
-	    					<a href="#" class="col-md-6 col-md-offset-3 text-center">
-	    						¿Confirman asistencia?
-	    					</a>
-	    				</div>
-						<a href="" class="down col-md-12 text-center"><span class="glyphicon glyphicon-menu-down"></span></a>
-	    			</div>
-    			</div>
-    		</section>
-    		<section class="menu container">
-    			<div class="row">
-    				<div class="col-md-4">
-    					<a href="#">
-	    					<p class="title col-sm-12 text-center">La Iglesia</p>
-	    					<img src="{{asset('bundles/app/images/menu01.png')}}" alt="">
-    					</a>
-    				</div>
-    				<div class="col-md-4">
-    					<a href="#">
-	    					<p class="title col-sm-12 text-center">La Fiesta</p>
-	    					<img src="{{asset('bundles/app/images/menu02.png')}}" alt="">
-    					</a>
-    				</div>
-    				<div class="col-md-4">
-    					<a href="#">
-	    					<p class="title col-sm-12 text-center">Regalos</p>
-	    					<img src="{{asset('bundles/app/images/menu03.png')}}" alt="">
-    					</a>
-    				</div>
-    			</div>
-    		</section>
-    		<section class="col-sm-12 ubicaciones">	
-				<div class="row">	
-					<div class="col-md-6">	
-						<h3 class="titile">La Iglesia</h3>
-						<div class="info">
-							Iglesia San Isidro <br>
-							Av. Libertador 1598	<br>
-							19.30 hs
-						</div>
-					</div>
-					<div class="col-md-6">	
-					
-					</div>
-				</div>
-    		</section>
-    	</div>
+            <section class="top">
+                <img src="{{asset('bundles/app/images/primera.jpg')}}" alt="Sabri y Alexis">
+                <div class="row contCount">
+                    <div class="col-md-12">
+                        <div class="row">
+                                <div class="col-md-5">
+                                    <p class="titleCount">Vení a festejar con nosotros, solo falta...</p>
+                                </div>
+                                <div class="col-md-7">
+                                    <div id="countdown"></div><!-- /#Countdown Div -->
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="welcome col-md-3">
+                    <div class="row">
+                        <div class="sya col-md-12">
+                            <p>Sabri y Alexis</p>
+                        </div>
+                        <div class="invitacion col-md-12">
+                            <p>Hola Sol y Fer <br> queremos invitarlos a <span>¡nuestro casamiento!</span></p>
+                        </div>
+                        <div class="ctaConfirm col-md-12">
+                            <a href="#" class="col-md-6 col-md-offset-3 text-center">
+                                    ¿Confirman asistencia?
+                            </a>
+                        </div>
+                        <a href="" class="down col-md-12 text-center"><span class="glyphicon glyphicon-menu-down"></span></a>
+                    </div>
+                </div>
+            </section>
+            <section class="menu container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="#">
+                            <p class="title col-sm-12 text-center">La Iglesia</p>
+                            <img src="{{asset('bundles/app/images/menu01.png')}}" alt="">
+                        </a>
+                        <p class="title col-sm-12 text-center">Basílica del Sagrado Corazón de Jesús</p>
+                        <p class="title col-sm-12 text-center">Av. Velez Sarsfield 1351</p>
+                        <p class="title col-sm-12 text-center">20:30 hs.</p>
+                    </div>
+                    <div class="col-md-6">
+                            <a href="#">
+                                <p class="title col-sm-12 text-center">La Fiesta</p>
+                                <img src="{{asset('bundles/app/images/menu02.png')}}" alt="">
+                            </a>
+                            <p class="title col-sm-12 text-center">Calima Eventos</p>
+                            <p class="title col-sm-12 text-center">Olga Cossettini 830, Buenos Aires</p>
+                            <p class="title col-sm-12 text-center">22:00 hs.</p>
+                    </div>                                
+                    {#<div class="col-md-4">
+                            <a href="#">
+                                    <p class="title col-sm-12 text-center">Regalos</p>
+                                    <img src="{{asset('bundles/app/images/menu03.png')}}" alt="">
+                            </a>
+                    </div>#}                                
+                </div>
+            </section>
+            <section class="col-sm-12 ubicaciones">	
+                <div class="row">	
+                    <div class="col-md-12 text-center">	
+                        <h2 class="titlePhrase">¿QUERÉS HACERNOS UN REGALO?</h2>
+                        <br/>
+                        <div class="info">             
+                            <div class="phrase"><p>Para nosotros lo más importante es tu presencia, pero si algo 
+                                    nos quieres obsequiar, con dinero lo sabremos apreciar.</p>
+                            <br/>
+                            BANCO 123321456654 <br/>
+                            CBU 1324354657687980. <br/>
+                            </div>
+                           {#-El regalo es opcional,la asistencia obligatoria. 
+                            Pero si queres tener un detalle con nosotros qué mejor regalo 
+                            que una ayudita para nuestra luna de miel.<br/>
+                            
+                            -Nuestro mejor regalo es que estés con nosotros en nuestro día,
+                            pero si querés hacernos un obsequio, este es nuestro número de cuenta.
+                            <br/>
+                            
+                            - Ayudanos a pagarnos la luna de miel.
+                            <br/>
+                            - Que compartas este día tan importante con nosotros es un gran regalo..
+                            Pero si deseas que nuestros sueños se hagan realidad,
+                            puedes ayudarnos en este número de cuenta.
+                            <br/>
+                            -Tu presencia es nuestro mejor regalo pero si queres, podés contribuir 
+                            a hacer nuestra luna de miel innolvidable.
+                            <br/>#}
+                        </div>
+                    </div>
+                </div>
+            </section>
+    	</div>                        
     </div>
 {% endblock %}
 {% block javascriptAbajo %}
