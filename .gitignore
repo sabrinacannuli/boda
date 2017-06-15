@@ -12,6 +12,6 @@
 /src/Core/*
 !src/Core/.gitkeep
 !src/App/.gitkeep
-/vendor/
 /web/bundles/
+/vendor/
 /nbproject/
