@@ -22,7 +22,6 @@
     font-style: normal;
 }
 
- 
 .top{
 	position: relative;
 	max-height: 640px;
@@ -166,7 +165,54 @@
 .ubicaciones{
 	background:$color1;
 	height: 300px;
-
+}
+.confirmAsist{
+	background: black;
+	height: 560px;
+	z-index: -11;
+	.background{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background: url('../images/confirmAsist.jpg');
+		background-repeat: no-repeat;
+		background-size:100%;
+		opacity: .5;
+		z-index: -10;
+	}
+	.text{
+		margin: 0 auto;
+		width: 60%;
+		h2{
+			float: none;
+			font-size:45px;
+			padding: 60px 0 0;
+			margin: 0;
+			color: white;
+			font-family: 'futura-light';
+		}
+		img{
+			margin-top: 10px;
+			width: 50%;
+		}
+	}
+	.Cta{
+		margin: 10% auto 0 auto;
+			background: rgba(255,204,102,.8);
+			border-radius: 13px;
+			overflow: hidden;
+			width: 30%;
+			padding: 20px;
+		.btnConfirm{
+			color: white;
+			margin: 0 auto;
+			font-family: 'futura-light';
+			text-align: center;
+			font-size: 35px;
+		}
+	}
 }
 .phrase{
     font-size: 20px;
