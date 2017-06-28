@@ -188,7 +188,7 @@
 		h2{
 			float: none;
 			font-size:45px;
-			padding: 60px 0 0;
+			padding: 10% 0 0;
 			margin: 0;
 			color: white;
 			font-family: 'futura-light';
@@ -200,26 +200,50 @@
 	}
 	.Cta{
 		margin: 10% auto 0 auto;
-			background: rgba(255,204,102,.8);
-			border-radius: 13px;
-			overflow: hidden;
-			width: 30%;
-			padding: 20px;
+		background: rgba(255,204,102,.8);
+		border-radius: 13px;
+		overflow: hidden;
+		width: 25%;
+		padding: 20px;
 		.btnConfirm{
 			color: white;
 			margin: 0 auto;
 			font-family: 'futura-light';
 			text-align: center;
-			font-size: 35px;
+			font-size: 25px;
 		}
 	}
 }
-.phrase{
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    color: white;
-}
-.titlePhrase{
-    color: white;
+.regalo{
+   	color: gray;
+   	height: 560px;
+	.titlePhrase{
+	    font-family: 'Great Vibes';
+	    font-size: 60px;
+	}
+	img{
+		width: 100%;
+	}
+	.infoBco{
+		float: left;
+		text-align:center;
+		padding: 7% 0;
+		img{
+			width: 30%;
+		}
+		.phrase{
+		    font-family: 'futura-light';
+		    font-size: 25px;
+		    width: 70%;
+		    margin: 0 auto;
+		    padding: 10px 0;
+		    p{
+		    	padding-bottom: 10px;
+		    }
+		    span{
+		    	font-family: 'Futura';
+		    	display:block;
+		    }
+		}
+	}
 }
