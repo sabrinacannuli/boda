@@ -162,10 +162,7 @@
 		}
 	}
 }
-.ubicaciones{
-	background:$color1;
-	height: 300px;
-}
+
 .confirmAsist{
 	background: black;
 	height: 560px;
@@ -244,6 +241,89 @@
 		    	font-family: 'Futura';
 		    	display:block;
 		    }
+		}
+	}
+}
+
+.ubicaciones{
+	padding-top:50px;
+	padding-bottom:50px;
+	background:#f7d379;
+
+	.block{
+		h2{
+			color:white;
+			font-family: 'Great Vibes';
+			font-size: 54px;
+		}
+		img{
+			width: 50%;
+			margin: 0 auto;
+		}
+		.info{
+			color: gray;
+			font-family: 'futura-light';
+			font-weight: lighter;
+			text-align:center;
+			font-size: 23px;
+			p{
+				padding: 20px 0;
+				margin: 0;
+			}
+			.iglesia{
+				margin-bottom: 27px;
+			}
+			b{
+				display:block;
+				font-size: 20px;
+			}
+		}
+		.fa{
+			color: white;
+			font-size: 25px;
+		}
+		.fa-whatsapp{
+			padding-right: 10px;
+		}
+		iframe{
+			display: block;
+			clear: both;
+			margin: 15px auto;
+		}
+	}
+}
+
+
+footer{
+	.row{
+		position:relative;
+		height: 450px;
+		background: url('../images/footer.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 0 35%;
+		color: white;
+	}
+	.top{
+		margin-top: 50px;
+		-ms-transform: rotate(180deg); 
+	    -webkit-transform: rotate(180deg); 
+	    transform: rotate(180deg);
+	}
+	.saludo{
+		position: absolute;
+		bottom: 30px;
+		margin: 0 auto;
+		width: 100%;
+		text-align:center;
+		img{
+			width: 13%; 
+			margin: 0 auto;
+		}
+		p{
+			font-family: 'Sacramento';
+			font-size: 80px;
+			padding: 10px 0;
 		}
 	}
 }
