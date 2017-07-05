@@ -50,6 +50,13 @@ class Invitados
     private $alias;
     
     /**
+     * @var string
+     *
+     * @ORM\Column(name="confirmacion", type="text" , nullable=true)
+     */
+    private $confirmacion;
+    
+    /**
      * Constructor
      */
     public function __construct()
@@ -137,7 +144,7 @@ class Invitados
         return $this->nombreCompleto;
     }
     
-        /**
+    /**
      * Set alias
      *
      * @param string $alias
@@ -158,5 +165,28 @@ class Invitados
     public function getAlias()
     {
         return $this->alias;
+    }
+    
+    /**
+     * Set confirmacion
+     *
+     * @param string $confirmacion
+     * @return Invitados
+     */
+    public function setConfirmacion($confirmacion)
+    {
+        $this->confirmacion = $confirmacion;
+    
+        return $this;
+    }
+
+    /**
+     * Get confirmacion
+     *
+     * @return string 
+     */
+    public function getConfirmacion()
+    {
+        return $this->confirmacion;
     }
 }

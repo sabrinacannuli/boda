@@ -17,11 +17,14 @@ class DefaultController extends Controller
         foreach($invitados as $invitados){
             if($nameRouting == $invitados->getNombreCompleto()){
                 $alias = $invitados->getAlias();
+                $confirmacion = $invitados->getConfirmacion();
+                
             }
         }      
         
         return $this->render('AppBundle:Default:index.html.twig', array(
             'nombre' => $alias,
+            'confirmacion' => $confirmacion
         ));
     }
     

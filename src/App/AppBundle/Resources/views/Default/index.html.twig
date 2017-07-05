@@ -75,7 +75,12 @@
                     <img src="{{asset('bundles/app/images/line03.png')}}" alt="">
                 </div> 
                 <div class="Cta">
-                    <a class="btnConfirm" href="">Confirmá  <br>  tu asistencia</a>
+                    {% if confirmacion == 'no' %}
+                        <a class="btnConfirm" href="">Confirmá  <br>  tu asistencia</a>
+                   {% else %}
+                   <div class="btnConfirm">Ya confirmó asistencia, los esperamos!</div>
+                   {% endif %}
+                   
                 </div>
                 </div> 
             </section>
