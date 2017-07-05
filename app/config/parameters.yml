@@ -1,11 +1,11 @@
 # This file is auto-generated during the composer install
 parameters:
     database_driver: pdo_mysql
-    database_host: 23.253.69.215
+    database_host: localhost
     database_port: null
-    database_name: sonata
-    database_user: me262
-    database_password: ChurroVerde5
+    database_name: boda
+    database_user: root
+    database_password:
     mailer_transport: smtp
     mailer_host: 127.0.0.1
     mailer_user: null

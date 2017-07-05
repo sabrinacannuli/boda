@@ -7,7 +7,22 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class DefaultController extends Controller
 {
     public function indexAction()
-    {
-        return $this->render('AppBundle:Default:index.html.twig', array());
+    {        
+        $em = $this->getDoctrine()->getManager();
+               
+        $invitados = $em->getRepository('AppBundle:Invitados')->findAll();
+        $request = $this->getRequest();
+        $nameRouting = $request->get('nombre');
+        $alias = 'nada';
+        foreach($invitados as $invitados){
+            if($nameRouting == $invitados->getNombreCompleto()){
+                $alias = $invitados->getAlias();
+            }
+        }      
+        
+        return $this->render('AppBundle:Default:index.html.twig', array(
+            'nombre' => $alias,
+        ));
     }
+    
 }
