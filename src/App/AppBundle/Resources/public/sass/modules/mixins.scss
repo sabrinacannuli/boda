@@ -1,0 +1,176 @@
+// Responsiveness
+
+@mixin clearfix($x:none) {
+  & {
+    *zoom: 1;
+    clear: $x;
+  }
+  &:before {
+    content: "";
+    display: table;
+    height: 0;
+  }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+$zero: 0px;
+$tablet-width: 768px;
+/* $desktop-width: 992px; */
+$desktop-width: 1025px;
+$lgdesktop-width: 1350px;
+
+@mixin minimobile {
+  @media (min-width: #{$zero}) and (max-width: 365px) {
+    @content
+  }
+}
+
+@mixin mobile {
+  @media (min-width: #{$zero}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin mobile-tablet {
+  @media (min-width: #{$zero}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) and (max-width: #{$lgdesktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin lgdesktop {
+  @media (min-width: #{$lgdesktop-width}) {
+    @content;
+  }
+}
+
+@mixin background-opacity($color, $opacity) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}
+
+@mixin center($xy:xy) {
+  @if $xy == xy {
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    @include transform(translateX(-50%) translateY(-50%));
+  }
+  @else if $xy == x {
+    left: 50%;
+    right: auto;
+    @include transform(translateX(-50%));
+  }
+  @else if $xy == y {
+    top: 50%;
+    bottom: auto;
+    @include transform(translateY(-50%));
+  }
+}
+
+@mixin triangle($size, $color, $direction) {
+  $width: nth($size, 1);
+  $height: nth($size, length($size));
+  $foreground-color: nth($color, 1);
+  $background-color: if(length($color) == 2, nth($color, 2), transparent);
+  height: 0;
+  width: 0;
+
+  @if ($direction == up) or ($direction == down) or ($direction == right) or ($direction == left) {
+    $width: $width / 2;
+    $height: if(length($size) > 1, $height, $height/2);
+
+    @if $direction == up {
+      border-bottom: $height solid $foreground-color;
+      border-left: $width solid $background-color;
+      border-right: $width solid $background-color;
+    } @else if $direction == right {
+      border-bottom: $width solid $background-color;
+      border-left: $height solid $foreground-color;
+      border-top: $width solid $background-color;
+    } @else if $direction == down {
+      border-left: $width solid $background-color;
+      border-right: $width solid $background-color;
+      border-top: $height solid $foreground-color;
+    } @else if $direction == left {
+      border-bottom: $width solid $background-color;
+      border-right: $height solid $foreground-color;
+      border-top: $width solid $background-color;
+    }
+  } @else if ($direction == up-right) or ($direction == up-left) {
+    border-top: $height solid $foreground-color;
+
+    @if $direction == up-right {
+      border-left:  $width solid $background-color;
+    } @else if $direction == up-left {
+      border-right: $width solid $background-color;
+    }
+  } @else if ($direction == down-right) or ($direction == down-left) {
+    border-bottom: $height solid $foreground-color;
+
+    @if $direction == down-right {
+      border-left:  $width solid $background-color;
+    } @else if $direction == down-left {
+      border-right: $width solid $background-color;
+    }
+  } @else if ($direction == inset-up) {
+    border-color: $background-color $background-color $foreground-color;
+    border-style: solid;
+    border-width: $height $width;
+  } @else if ($direction == inset-down) {
+    border-color: $foreground-color $background-color $background-color;
+    border-style: solid;
+    border-width: $height $width;
+  } @else if ($direction == inset-right) {
+    border-color: $background-color $background-color $background-color $foreground-color;
+    border-style: solid;
+    border-width: $width $height;
+  } @else if ($direction == inset-left) {
+    border-color: $background-color $foreground-color $background-color $background-color;
+    border-style: solid;
+    border-width: $width $height;
+  }
+}
+
+// rem fallback - credits: http://zerosixthree.se/
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+@mixin removeBlur(){
+  -webkit-min-device-pixel-ratio: 0;
+}
+
+@mixin rowGutter($px:15) {
+  margin-left: -$px+px;
+  margin-right: -$px+px;
+  > [class*=col-] {
+      padding-left: $px+px;
+      padding-right: $px+px;
+  }
+}
