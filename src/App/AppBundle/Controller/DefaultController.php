@@ -14,6 +14,7 @@ class DefaultController extends Controller
         $request = $this->getRequest();
         $nameRouting = $request->get('nombre');
         $alias = 'nada';
+        $confirmacion = 'no';
         foreach($invitados as $invitados){
             if($nameRouting == $invitados->getNombreCompleto()){
                 $alias = $invitados->getAlias();

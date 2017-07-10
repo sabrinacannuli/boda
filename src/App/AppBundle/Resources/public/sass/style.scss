@@ -69,7 +69,13 @@
                         }
 		}
                 .countt{
-                    margin-top:-58px!important;
+                    @include tablet {
+                            margin-top:-58px!important;
+                    }
+                    @include mobile {
+                            margin-top:-58px!important;
+                    }
+                    
                 }
 		#countdown{
 			font-family: 'Abril Fatface';
@@ -89,6 +95,14 @@
 		position: absolute;
 		right: 5%;
 		top: 10%;
+                @include tablet {
+                    top: 4%;
+                    left:40px;
+                }
+                @include mobile {
+                    top: 4%;
+                    left:40px;
+                }
 		.sya{                    
 			width:100% ;
 			p{
@@ -157,6 +171,10 @@
 			    font-weight: lighter;
 			}
 		}
+                
+                .tituloMargen{
+                    margin-top:165px;
+                }
 	}
 }
 .menu{

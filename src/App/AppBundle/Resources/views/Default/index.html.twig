@@ -22,20 +22,30 @@
                 </div>
                 <div class="welcome col-md-3">
                     <div class="row">
+                        {% if nombre != 'nada'%}
                         <div class="sya col-md-12">
                             <p>Sabri y Alexis</p>
                         </div>
+                        {% else %}
+                            <div class="sya col-md-12 tituloMargen">
+                            <p>Sabri y Alexis</p>
+                            </div>
+                        {% endif %}
                         <div class="invitacion col-md-12">
+                            {% if nombre != 'nada'%}
                             <p>Hola 
                             {{nombre}}
                             <br> queremos invitarlos a <span>¡nuestro casamiento!</span></p>
+                            {% endif %}
                         </div>
+                        {% if nombre != 'nada'%}
                         <div class="ctaConfirm col-md-12">
                             <a href="#confirmAsist"  class="col-md-6 col-md-offset-3 text-center ancla">
-                                ¿Confirman asistencia?
+                                    ¿Confirman asistencia?
                             </a>
                         </div>
                         <a href="#confirmAsist" class="down col-md-12 text-center ancla"><span class="glyphicon glyphicon-menu-down"></span></a>
+                        {% endif %}
                     </div>
                 </div>
             </section>

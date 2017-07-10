@@ -58,8 +58,12 @@
         .top .contCount .titleCount {
           margin-top: -26px !important;
           text-align: center; } }
-    .top .contCount .countt {
-      margin-top: -58px !important; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .top .contCount .countt {
+        margin-top: -58px !important; } }
+    @media (min-width: 0px) and (max-width: 767px) {
+      .top .contCount .countt {
+        margin-top: -58px !important; } }
     .top .contCount #countdown {
       font-family: 'Abril Fatface'; }
       .top .contCount #countdown span {
@@ -74,6 +78,14 @@
     position: absolute;
     right: 5%;
     top: 10%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .top .welcome {
+        top: 4%;
+        left: 40px; } }
+    @media (min-width: 0px) and (max-width: 767px) {
+      .top .welcome {
+        top: 4%;
+        left: 40px; } }
     .top .welcome .sya {
       width: 100%; }
       .top .welcome .sya p {
@@ -128,6 +140,8 @@
       font-size: 40px;
       color: black;
       font-weight: lighter; }
+    .top .welcome .tituloMargen {
+      margin-top: 165px; }
 
 .menu {
   padding: 15px 0; }
