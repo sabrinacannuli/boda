@@ -28,8 +28,14 @@
 	max-height: 640px;
 	overflow: hidden;
 	img{
-		margin-top: -60px;
-		width:100%;
+            margin-top: -60px;
+            @include tablet {
+                    margin-top: 0px!important;
+            }
+            @include mobile {
+                margin-top: 0px!important;
+            }
+            width:100%;
 	}
 	.contCount{
 		position:absolute;
@@ -39,13 +45,32 @@
 		width:100%;
 		background: rgba(255,255,255,.8);
 		font-size: 30px;
+                @include tablet {
+                    background: none!important;
+                    position:relative;
+                }
+                @include mobile {
+                    background: none!important;
+                    position:relative;
+                }
 		.titleCount{
 			color: black;
 			font-family: 'futura-light';
 			font-size: 25px;
 			padding: 40px 0px;
 			margin: 0;
+                        @include tablet {
+                            margin-top:-26px!important;
+                            text-align:center;
+                        }
+                        @include mobile {
+                            margin-top:-26px!important;
+                            text-align:center;
+                        }
 		}
+                .countt{
+                    margin-top:-58px!important;
+                }
 		#countdown{
 			font-family: 'Abril Fatface';
 			span{
@@ -64,13 +89,7 @@
 		position: absolute;
 		right: 5%;
 		top: 10%;
-		.sya{
-                    @include tablet {
-                        background-color: red;
-                    }
-                    @include mobile {
-                        background-color: blue;
-                    }
+		.sya{                    
 			width:100% ;
 			p{
 				font-family: 'Sacramento';
@@ -123,6 +142,12 @@
 				border-radius: 13px;
 				font-family: 'helvetica';
 			}
+                        @include tablet {
+                            display:none!important;
+                        }
+                        @include mobile {
+                            display:none!important;
+                        }
 		}
 		.down{
 			.glyphicon{
@@ -299,7 +324,14 @@
 		}
 	}
 }
-
+.glyphicon-menu-down{
+    @include tablet {
+        display:none!important;
+    }
+    @include mobile {
+        display:none!important;
+    }
+}
 
 footer{
 	.row{
@@ -312,7 +344,7 @@ footer{
 		color: white;
 	}
 	.top{
-		margin-top: 50px;
+		margin-top: 50px;       
 		-ms-transform: rotate(180deg); 
 	    -webkit-transform: rotate(180deg); 
 	    transform: rotate(180deg);
@@ -333,4 +365,6 @@ footer{
 			padding: 10px 0;
 		}
 	}
+        
+        
 }

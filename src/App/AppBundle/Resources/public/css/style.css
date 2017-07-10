@@ -22,6 +22,12 @@
   .top img {
     margin-top: -60px;
     width: 100%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .top img {
+        margin-top: 0px !important; } }
+    @media (min-width: 0px) and (max-width: 767px) {
+      .top img {
+        margin-top: 0px !important; } }
   .top .contCount {
     position: absolute;
     bottom: 0px;
@@ -30,12 +36,30 @@
     width: 100%;
     background: rgba(255, 255, 255, 0.8);
     font-size: 30px; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .top .contCount {
+        background: none !important;
+        position: relative; } }
+    @media (min-width: 0px) and (max-width: 767px) {
+      .top .contCount {
+        background: none !important;
+        position: relative; } }
     .top .contCount .titleCount {
       color: black;
       font-family: 'futura-light';
       font-size: 25px;
       padding: 40px 0px;
       margin: 0; }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .top .contCount .titleCount {
+          margin-top: -26px !important;
+          text-align: center; } }
+      @media (min-width: 0px) and (max-width: 767px) {
+        .top .contCount .titleCount {
+          margin-top: -26px !important;
+          text-align: center; } }
+    .top .contCount .countt {
+      margin-top: -58px !important; }
     .top .contCount #countdown {
       font-family: 'Abril Fatface'; }
       .top .contCount #countdown span {
@@ -52,12 +76,6 @@
     top: 10%; }
     .top .welcome .sya {
       width: 100%; }
-      @media (min-width: 768px) and (max-width: 1024px) {
-        .top .welcome .sya {
-          background-color: red; } }
-      @media (min-width: 0px) and (max-width: 767px) {
-        .top .welcome .sya {
-          background-color: blue; } }
       .top .welcome .sya p {
         font-family: 'Sacramento';
         color: white;
@@ -99,6 +117,12 @@
       background: #ffcc66;
       border-radius: 13px;
       font-family: 'helvetica'; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .top .welcome .ctaConfirm {
+        display: none !important; } }
+    @media (min-width: 0px) and (max-width: 767px) {
+      .top .welcome .ctaConfirm {
+        display: none !important; } }
     .top .welcome .down .glyphicon {
       margin-top: 50px;
       font-size: 40px;
@@ -237,6 +261,13 @@
     display: block;
     clear: both;
     margin: 15px auto; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .glyphicon-menu-down {
+    display: none !important; } }
+@media (min-width: 0px) and (max-width: 767px) {
+  .glyphicon-menu-down {
+    display: none !important; } }
 
 footer .row {
   position: relative;

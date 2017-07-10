@@ -14,7 +14,7 @@
                                 <div class="col-md-5">
                                     <p class="titleCount">Vení a festejar con nosotros, solo falta...</p>
                                 </div>
-                                <div class="col-md-7">
+                                <div class="col-md-7 countt">
                                     <div id="countdown"></div><!-- /#Countdown Div -->
                                 </div>
                         </div>
@@ -75,12 +75,11 @@
                     <img src="{{asset('bundles/app/images/line03.png')}}" alt="">
                 </div> 
                 <div class="Cta">
-                    {% if confirmacion == 'no' %}
-                        <a class="btnConfirm" href="">Confirmá  <br>  tu asistencia</a>
+                   {% if confirmacion == 'no' %}
+                        <a class="btnConfirm" id="btnConfirm2">Confirmá  <br>  tu asistencia</a>                        
                    {% else %}
                    <div class="btnConfirm">Ya confirmó asistencia, los esperamos!</div>
-                   {% endif %}
-                   
+                   {% endif %}                   
                 </div>
                 </div> 
             </section>
@@ -144,8 +143,6 @@
                         <a href="mailto:?subject=Casamiento Sabri y Alexis&body=La ubicación del salón es https://www.google.com.ar/maps/place/Calima+Eventos/@-34.606039,-58.373266,15z/data=!4m5!3m4!1s0x95a3352ec5210079:0x51520efb5b86e335!8m2!3d-34.606761!4d-58.3637929">
                         <span class="fa fa-envelope"></span></a>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12045.49276300984!2d-58.373265998183584!3d-34.60603900245349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352ec5210079%3A0x51520efb5b86e335!2sCalima+Eventos!5e0!3m2!1ses!2sar!4v1499092163296" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-                    </div>
                     </div>
                 </div>
             </section>
@@ -159,7 +156,7 @@
                     </div>
                 </div>
             </footer>
-    	</div>                        
+    	</div>   
     </div>
 {% endblock %}
 {% block javascriptAbajo %}
@@ -209,5 +206,15 @@
                 },1000);
             
         });
+        $(document).ready(function() {
+            $('#btnConfirm2').click(function(){
+                var dataString = 'id='+service;
+                $.ajax({
+                    type: "GET",
+                    url: "includes/update.php",
+                    data: dataString,
+                });
+            });                 
+        });   
 	</script>
 {% endblock %}
