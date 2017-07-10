@@ -22,9 +22,6 @@
   .top img {
     margin-top: -60px;
     width: 100%; }
-    @media (min-width: 768px) and (max-width: 1024px) {
-      .top img {
-        margin-top: 0px !important; } }
     @media (min-width: 0px) and (max-width: 767px) {
       .top img {
         margin-top: 0px !important; } }
@@ -50,10 +47,6 @@
       font-size: 25px;
       padding: 40px 0px;
       margin: 0; }
-      @media (min-width: 768px) and (max-width: 1024px) {
-        .top .contCount .titleCount {
-          margin-top: -26px !important;
-          text-align: center; } }
       @media (min-width: 0px) and (max-width: 767px) {
         .top .contCount .titleCount {
           margin-top: -26px !important;
@@ -224,10 +217,6 @@
 .regalo {
   color: gray;
   height: 560px; }
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .regalo {
-      height: inherit !important;
-      font-size: 55px !important; } }
   @media (min-width: 0px) and (max-width: 767px) {
     .regalo {
       height: inherit !important;

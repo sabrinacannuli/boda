@@ -29,9 +29,6 @@
 	overflow: hidden;
 	img{
             margin-top: -60px;
-            @include tablet {
-                    margin-top: 0px!important;
-            }
             @include mobile {
                 margin-top: 0px!important;
             }
@@ -59,10 +56,6 @@
 			font-size: 25px;
 			padding: 40px 0px;
 			margin: 0;
-                        @include tablet {
-                            margin-top:-26px!important;
-                            text-align:center;
-                        }
                         @include mobile {
                             margin-top:-26px!important;
                             text-align:center;
@@ -272,10 +265,6 @@
 .regalo{
    	color: gray;
    	height: 560px;
-        @include tablet {
-            height: inherit!important;
-            font-size:55px!important;
-        }
         @include mobile {
             height: inherit!important;
             font-size:55px!important;
