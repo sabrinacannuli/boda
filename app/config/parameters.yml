@@ -1,11 +1,11 @@
 # This file is auto-generated during the composer install
 parameters:
     database_driver: pdo_mysql
-    database_host: localhost
+    database_host: 190.228.29.61
     database_port: null
-    database_name: boda
-    database_user: root
-    database_password:
+    database_name: bodadb
+    database_user: bodauser
+    database_password: SabrinaAlexis19
     mailer_transport: smtp
     mailer_host: 127.0.0.1
     mailer_user: null
