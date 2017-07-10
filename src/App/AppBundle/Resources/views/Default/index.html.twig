@@ -35,7 +35,7 @@
                             {% if nombre != 'nada'%}
                             <p>Hola 
                             {{nombre}}
-                            <br> queremos invitarlos a <span>¡nuestro casamiento!</span></p>
+                            <br> queremos invitarlos a <span class="nuestroCasam">¡nuestro casamiento!</span></p>
                             {% endif %}
                         </div>
                         {% if nombre != 'nada'%}
@@ -97,7 +97,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="row">
-                            <img src="{{asset('bundles/app/images/regalo.jpg')}}" class="img-responsive" alt="">
+                            <img src="{{asset('bundles/app/images/regalo.jpg')}}" class="img-responsive regalosImg" alt="">
                         </div>
                     </div>
                     <div class="col-md-7 infoBco text-center">
@@ -131,7 +131,7 @@
             </section>
             <section class="col-sm-12 ubicaciones" id="ubicaciones"> 
                 <div class="container">   
-                    <div class="col-md-6 block text-center"> 
+                    <div class="col-md-6 block text-center church"> 
                         <h2>La Iglesia</h2>
                         <img src="{{asset('bundles/app/images/line03.png')}}" alt="" class="img-responsive">
                         <div class="info">

@@ -147,6 +147,14 @@
 				font-size: 30px;
 			}
 		}
+                .nuestroCasam{
+                    @include tablet {
+                            font-size:29px!important;
+                        }
+                        @include mobile {
+                            font-size:29px!important;
+                        }
+                }
 		.ctaConfirm{
 			a{
 				font-size:17px;
@@ -264,6 +272,22 @@
 .regalo{
    	color: gray;
    	height: 560px;
+        @include tablet {
+            height: inherit!important;
+            font-size:55px!important;
+        }
+        @include mobile {
+            height: inherit!important;
+            font-size:55px!important;
+        }
+        .regalosImg{
+            @include tablet {
+                display:none!important;
+            }
+            @include mobile {
+                display:none!important;
+            }
+        }
 	.titlePhrase{
 	    font-family: 'Great Vibes';
 	    font-size: 60px;
@@ -355,6 +379,12 @@ footer{
 	.row{
 		position:relative;
 		height: 450px;
+                @include tablet {
+                    height: 270px!important;
+                }
+                @include mobile {
+                    height: 270px!important;
+                }
 		background: url('../images/footer.png');
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -381,6 +411,12 @@ footer{
 			font-family: 'Sacramento';
 			font-size: 80px;
 			padding: 10px 0;
+                        @include tablet {
+                            font-size: 60px;
+                        }
+                        @include mobile {
+                            font-size: 60px;
+                        }
 		}
 	}
         
