@@ -15,6 +15,6 @@
 /web/bundles/
 /vendor/
 /nbproject/
-web/app.php
-web/app_dev.php
+/web/app.php/
+/web/app_dev.php/
 .phpintel/
