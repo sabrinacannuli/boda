@@ -45,6 +45,7 @@
                 @include mobile {
                     background: none!important;
                     position:relative;
+                    margin-top:40%;
                 }
 		.titleCount{
 			color: black;
@@ -81,9 +82,9 @@
 		position: absolute;
 		right: 5%;
 		top: 10%;
-                @include mobile {
-                    top: 4%;
+                @include mobile {                    
                     left:40px;
+                    top:28%;
                 }
 		.sya{                    
 			width:100% ;
@@ -124,20 +125,20 @@
 			color:black;
 			margin: 15px 0;
 			text-align:center;
+                        @include mobile {                    
+                            margin: 15% 0;
+                        }
 			span{
 				display:block;
 				font-size: 30px;
 			}
-                        @include mobile {
-                            font-size:20px!important;
-                        }
 		}
                 .nuestroCasam{
                     @include tablet {
                             font-size:29px!important;
                         }
                         @include mobile {
-                            font-size:24px!important;
+                            font-size:29px!important;
                         }
                 }
 		.ctaConfirm{

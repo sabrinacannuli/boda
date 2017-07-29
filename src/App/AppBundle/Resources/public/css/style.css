@@ -36,7 +36,8 @@
     @media (min-width: 0px) and (max-width: 767px) {
       .top .contCount {
         background: none !important;
-        position: relative; } }
+        position: relative;
+        margin-top: 40%; } }
     .top .contCount .titleCount {
       color: black;
       font-family: 'futura-light';
@@ -66,8 +67,8 @@
     top: 10%; }
     @media (min-width: 0px) and (max-width: 767px) {
       .top .welcome {
-        top: 4%;
-        left: 40px; } }
+        left: 40px;
+        top: 28%; } }
     .top .welcome .sya {
       width: 100%; }
       .top .welcome .sya p {
@@ -101,18 +102,18 @@
       color: black;
       margin: 15px 0;
       text-align: center; }
+      @media (min-width: 0px) and (max-width: 767px) {
+        .top .welcome .invitacion {
+          margin: 15% 0; } }
       .top .welcome .invitacion span {
         display: block;
         font-size: 30px; }
-      @media (min-width: 0px) and (max-width: 767px) {
-        .top .welcome .invitacion {
-          font-size: 20px !important; } }
     @media (min-width: 768px) and (max-width: 1024px) {
       .top .welcome .nuestroCasam {
         font-size: 29px !important; } }
     @media (min-width: 0px) and (max-width: 767px) {
       .top .welcome .nuestroCasam {
-        font-size: 24px !important; } }
+        font-size: 29px !important; } }
     .top .welcome .ctaConfirm a {
       font-size: 17px;
       padding: 10px;
