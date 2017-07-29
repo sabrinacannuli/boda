@@ -104,12 +104,15 @@
       .top .welcome .invitacion span {
         display: block;
         font-size: 30px; }
+      @media (min-width: 0px) and (max-width: 767px) {
+        .top .welcome .invitacion {
+          font-size: 20px !important; } }
     @media (min-width: 768px) and (max-width: 1024px) {
       .top .welcome .nuestroCasam {
         font-size: 29px !important; } }
     @media (min-width: 0px) and (max-width: 767px) {
       .top .welcome .nuestroCasam {
-        font-size: 29px !important; } }
+        font-size: 24px !important; } }
     .top .welcome .ctaConfirm a {
       font-size: 17px;
       padding: 10px;
