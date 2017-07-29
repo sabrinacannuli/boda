@@ -178,7 +178,8 @@
   overflow: hidden; }
   @media (min-width: 0px) and (max-width: 767px) {
     .confirmAsist {
-      height: 100%; } }
+      height: 100%;
+      overflow: inherit; } }
   .confirmAsist .background {
     margin-left: -15px;
     margin-right: -15px;
@@ -221,7 +222,9 @@
     padding: 20px; }
     @media (min-width: 0px) and (max-width: 767px) {
       .confirmAsist .Cta {
-        width: 50%; } }
+        width: 160px;
+        padding: 10px;
+        margin-top: 63px; } }
     .confirmAsist .Cta .btnConfirm {
       color: white;
       margin: 0 auto;
@@ -254,8 +257,14 @@
     float: left;
     text-align: center;
     padding: 7% 0; }
+    @media (min-width: 0px) and (max-width: 767px) {
+      .regalo .infoBco {
+        padding: 28% 0; } }
     .regalo .infoBco img {
       width: 30%; }
+      @media (min-width: 0px) and (max-width: 767px) {
+        .regalo .infoBco img {
+          width: 58%; } }
     .regalo .infoBco .phrase {
       font-family: 'futura-light';
       font-size: 25px;

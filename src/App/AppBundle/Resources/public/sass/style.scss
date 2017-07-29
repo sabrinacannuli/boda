@@ -220,6 +220,7 @@
 	overflow: hidden;
         @include mobile {
             height:100%;
+            overflow: inherit;
         }
 	// z-index: -11;
 	.background{
@@ -267,7 +268,9 @@
 		width: 25%;
 		padding: 20px;
                 @include mobile {
-                    width: 50%;
+                    width: 160px;
+                    padding: 10px;
+                    margin-top:63px;
                 }
 		.btnConfirm{
 			color: white;
@@ -308,8 +311,14 @@
 		float: left;
 		text-align:center;
 		padding: 7% 0;
+                @include mobile {
+                    padding: 28% 0
+                }
 		img{
-			width: 30%;
+                    width: 30%;
+                    @include mobile {
+                        width: 58%;
+                    }
 		}
 		.phrase{
 		    font-family: 'futura-light';
