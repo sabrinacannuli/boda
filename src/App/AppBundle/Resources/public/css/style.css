@@ -342,6 +342,9 @@
     display: block;
     clear: both;
     margin: 15px auto; }
+    @media (min-width: 0px) and (max-width: 767px) {
+      .ubicaciones .block iframe {
+        margin-left: -15px; } }
 
 @media (min-width: 1025px) and (max-width: 1349px) {
   .glyphicon-menu-down {
