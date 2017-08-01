@@ -28,11 +28,11 @@
 	max-height: 640px;
 	overflow: hidden;
 	img{
-            margin-top: -60px;
-            @include mobile {
-                margin-top: 0px!important;
-            }
-            width:100%;
+        margin-top: -60px;
+        @include mobile {
+            margin-top: 0px!important;
+        }
+        width:100%;
 	}
 	.contCount{
 		position:absolute;
@@ -42,28 +42,26 @@
 		width:100%;
 		background: rgba(255,255,255,.8);
 		font-size: 30px;
-                @include mobile {
-                    background: none!important;
-                    position:relative;
-                    margin-top:40%;
-                }
+        @include mobile {
+            background: none!important;
+            position:static;
+        }
 		.titleCount{
 			color: black;
 			font-family: 'futura-light';
 			font-size: 25px;
 			padding: 40px 0px;
 			margin: 0;
-                        @include mobile {
-                            margin-top:-26px!important;
-                            text-align:center;
-                        }
+            @include mobile {
+                // margin-top:-26px!important;
+                text-align:center;
+            }
 		}
-                .countt{
-                    @include mobile {
-                            margin-top:-58px!important;
-                    }
-                    
-                }
+        .countt{
+            @include mobile {
+                    margin-top:-58px!important;
+            }
+        }
 		#countdown{
 			font-family: 'Abril Fatface';
 			span{
@@ -82,12 +80,19 @@
 		position: absolute;
 		right: 5%;
 		top: 10%;
-                @include mobile {                    
-                    left:40px;
-                    top:28%;
-                }
+        @include mobile {                    
+            position: relative;
+            float:left;
+            right:0;
+            width: 100%;
+        }
 		.sya{                    
 			width:100% ;
+			@include mobile{
+				position: absolute;
+			    top: -95px;
+			    left: 0;
+			}
 			p{
 				font-family: 'Sacramento';
 				color: white;
@@ -95,6 +100,9 @@
 				// padding: 10px 0;
 				// font-weight: bold;
 				font-size: 50px;
+				@include mobile{
+					text-shadow: 1px 2px 3px black;
+				}
 			}
 			p:before{
 				background-image:url('../images/line01.png');
@@ -125,22 +133,26 @@
 			color:black;
 			margin: 15px 0;
 			text-align:center;
-                        @include mobile {                    
-                            margin: 15% 0;                            
-                        }
+            @include mobile {                    
+                position: static;
+			    width: 100%;
+			    margin:15px 0;
+			    padding:0;
+			    text-align:center;
+            }
 			span{
 				display:block;
 				font-size: 30px;
 			}
 		}
-                .nuestroCasam{
-                    @include tablet {
-                            font-size:29px!important;
-                        }
-                        @include mobile {
-                            font-size:29px!important;
-                        }
-                }
+        .nuestroCasam{
+            @include tablet {
+                font-size:29px!important;
+            }
+            @include mobile {
+                font-size:29px!important;
+            }
+        }
 		.ctaConfirm{
 			a{
 				font-size:17px;
@@ -150,15 +162,15 @@
 				border-radius: 13px;
 				font-family: 'helvetica';
 			}
-                        @include desktop {
-                            display:none!important;
-                        }
-                        @include tablet {
-                            display:none!important;
-                        }
-                        @include mobile {
-                            display:none!important;
-                        }
+            @include desktop {
+                display:none!important;
+            }
+            @include tablet {
+                display:none!important;
+            }
+            @include mobile {
+                display:none!important;
+            }
 		}
 		.down{
 			.glyphicon{
@@ -168,10 +180,9 @@
 			    font-weight: lighter;
 			}
 		}
-                
-                .tituloMargen{
-                    margin-top:165px;
-                }
+        .tituloMargen{
+            margin-top:165px;
+        }
 	}
 }
 .menu{
@@ -307,6 +318,11 @@
 	.titlePhrase{
 	    font-family: 'Great Vibes';
 	    font-size: 60px;
+	    @include mobile{
+	    	font-size: 46px;
+		    padding: 0 15px;
+		    margin: 0;
+	    }
 	}
 	img{
 		width: 100%;
@@ -315,14 +331,14 @@
 		float: left;
 		text-align:center;
 		padding: 7% 0;
-                @include mobile {
-                    padding: 28% 0
-                }
+        @include mobile {
+            padding: 0;
+        }
 		img{
-                    width: 30%;
-                    @include mobile {
-                        width: 58%;
-                    }
+	        width: 30%;
+	        @include mobile {
+	            width: 58%;
+	        }
 		}
 		.phrase{
 		    font-family: 'futura-light';
@@ -332,10 +348,20 @@
 		    padding: 10px 0;
 		    p{
 		    	padding-bottom: 10px;
+		    	@include mobile{
+		    		font-size:18px;
+		    	}
 		    }
 		    span{
 		    	font-family: 'Futura';
 		    	display:block;
+		    	@include mobile{
+		    		width: 100%;
+				    float: left;
+				    white-space: normal;
+				    font-size: 21px;
+				    line-height:38px;	
+		    	}
 		    }
 		}
 	}

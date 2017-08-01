@@ -36,8 +36,7 @@
     @media (min-width: 0px) and (max-width: 767px) {
       .top .contCount {
         background: none !important;
-        position: relative;
-        margin-top: 40%; } }
+        position: static; } }
     .top .contCount .titleCount {
       color: black;
       font-family: 'futura-light';
@@ -46,7 +45,6 @@
       margin: 0; }
       @media (min-width: 0px) and (max-width: 767px) {
         .top .contCount .titleCount {
-          margin-top: -26px !important;
           text-align: center; } }
     @media (min-width: 0px) and (max-width: 767px) {
       .top .contCount .countt {
@@ -67,15 +65,25 @@
     top: 10%; }
     @media (min-width: 0px) and (max-width: 767px) {
       .top .welcome {
-        left: 40px;
-        top: 28%; } }
+        position: relative;
+        float: left;
+        right: 0;
+        width: 100%; } }
     .top .welcome .sya {
       width: 100%; }
+      @media (min-width: 0px) and (max-width: 767px) {
+        .top .welcome .sya {
+          position: absolute;
+          top: -95px;
+          left: 0; } }
       .top .welcome .sya p {
         font-family: 'Sacramento';
         color: white;
         text-align: center;
         font-size: 50px; }
+        @media (min-width: 0px) and (max-width: 767px) {
+          .top .welcome .sya p {
+            text-shadow: 1px 2px 3px black; } }
       .top .welcome .sya p:before {
         background-image: url("../images/line01.png");
         background-size: 100%;
@@ -104,7 +112,11 @@
       text-align: center; }
       @media (min-width: 0px) and (max-width: 767px) {
         .top .welcome .invitacion {
-          margin: 15% 0; } }
+          position: static;
+          width: 100%;
+          margin: 15px 0;
+          padding: 0;
+          text-align: center; } }
       .top .welcome .invitacion span {
         display: block;
         font-size: 30px; }
@@ -255,6 +267,11 @@
   .regalo .titlePhrase {
     font-family: 'Great Vibes';
     font-size: 60px; }
+    @media (min-width: 0px) and (max-width: 767px) {
+      .regalo .titlePhrase {
+        font-size: 46px;
+        padding: 0 15px;
+        margin: 0; } }
   .regalo img {
     width: 100%; }
   .regalo .infoBco {
@@ -263,7 +280,7 @@
     padding: 7% 0; }
     @media (min-width: 0px) and (max-width: 767px) {
       .regalo .infoBco {
-        padding: 28% 0; } }
+        padding: 0; } }
     .regalo .infoBco img {
       width: 30%; }
       @media (min-width: 0px) and (max-width: 767px) {
@@ -277,9 +294,19 @@
       padding: 10px 0; }
       .regalo .infoBco .phrase p {
         padding-bottom: 10px; }
+        @media (min-width: 0px) and (max-width: 767px) {
+          .regalo .infoBco .phrase p {
+            font-size: 18px; } }
       .regalo .infoBco .phrase span {
         font-family: 'Futura';
         display: block; }
+        @media (min-width: 0px) and (max-width: 767px) {
+          .regalo .infoBco .phrase span {
+            width: 100%;
+            float: left;
+            white-space: normal;
+            font-size: 21px;
+            line-height: 38px; } }
 
 .ubicaciones {
   padding-top: 50px;

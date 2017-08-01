@@ -8,18 +8,6 @@
     	<div class="row">
             <section class="top">
                 <img src="{{asset('bundles/app/images/primera.jpg')}}" alt="Sabri y Alexis">
-                <div class="contCount">
-                    <div class="col-md-12">
-                        <div class="row">
-                                <div class="col-md-5">
-                                    <p class="titleCount">Vení a festejar con nosotros, solo falta...</p>
-                                </div>
-                                <div class="col-md-7 countt">
-                                    <div id="countdown"></div><!-- /#Countdown Div -->
-                                </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="welcome col-md-3">
                     <div class="row">
                         {% if nombre != 'nada'%}
@@ -39,13 +27,25 @@
                             {% endif %}
                         </div>
                         {% if nombre != 'nada'%}
-                        <div class="ctaConfirm col-md-12">
+                        <div class="ctaConfirm col-md-12 hidden-xs">
                             <a href="#confirmAsist"  class="col-md-6 col-md-offset-3 text-center ancla">
-                                    ¿Confirman asistencia?
+                                ¿Confirman asistencia?
                             </a>
                         </div>
-                        <a href="#confirmAsist" class="down col-md-12 text-center ancla"><span class="glyphicon glyphicon-menu-down"></span></a>
+                        <a href="#confirmAsist" class="down col-md-12 text-center ancla hidden-xs"><span class="glyphicon glyphicon-menu-down"></span></a>
                         {% endif %}
+                    </div>
+                </div>
+                <div class="contCount">
+                    <div class="col-md-12">
+                        <div class="row">
+                                <div class="col-md-5">
+                                    <p class="titleCount">Vení a festejar con nosotros, solo falta...</p>
+                                </div>
+                                <div class="col-md-7 countt">
+                                    <div id="countdown"></div><!-- /#Countdown Div -->
+                                </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -106,7 +106,7 @@
                             <div class="phrase">
                                 <p>Para nosotros lo más importante es tu presencia, pero si algo nos quieres obsequiar, con dinero lo sabremos apreciar.</p>
                                 <span>Banco Supervielle CA$ 82-2389650-3</span>
-                                <span>CBU 0270082320023896500038. </span>
+                                <span>CBU 0270082320023896500038</span>
                             </div>
                         <img src="{{asset('bundles/app/images/line02.png')}}" alt="">
                     </div>
