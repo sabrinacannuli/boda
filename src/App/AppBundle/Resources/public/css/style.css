@@ -172,6 +172,9 @@
       font-size: 40px;
       color: #ffcc66;
       font-family: 'Great Vibes'; }
+      @media (min-width: 0px) and (max-width: 767px) {
+        .menu a .title {
+          font-size: 30px; } }
     .menu a img {
       width: 70%;
       margin: 0 auto; }

@@ -207,6 +207,9 @@
 			font-size: 40px;
 			color: $color1;
 			font-family: 'Great Vibes';
+			@include mobile{
+				font-size:30px;
+			}
 		}
 		img{
 			width: 70%;
