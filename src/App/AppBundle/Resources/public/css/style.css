@@ -25,8 +25,7 @@
     @media (min-width: 0px) and (max-width: 767px) {
       .top img {
         margin-top: 0px !important;
-        border-bottom: 4px solid #FCC949;
-        border-top: 4px solid #FCC949; } }
+        border-bottom: 4px solid #FCC949; } }
   .top .contCount {
     position: absolute;
     bottom: 0px;
