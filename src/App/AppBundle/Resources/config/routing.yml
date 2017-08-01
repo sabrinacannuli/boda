@@ -6,3 +6,7 @@ app_homepage2:
     path:     /{nombre}
     defaults: { _controller: AppBundle:Default:index }
 
+app_confirmation:
+    path:     /
+    defaults: { _controller: AppBundle:Default:confirm }
+

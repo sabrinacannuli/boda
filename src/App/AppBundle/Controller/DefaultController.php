@@ -28,5 +28,13 @@ class DefaultController extends Controller
             'confirmacion' => $confirmacion
         ));
     }
+    public function confirmAction()
+    {        
+        $em = $this->getDoctrine()->getManager();
+               
+       // $invitados = $em->getRepository('AppBundle:Invitados')->findAll();
+        //$request = $this->getRequest();
+        $confirmacion = new \App\AppBundle\Entity\Invitados();
+    }
     
 }

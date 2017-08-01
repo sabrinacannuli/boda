@@ -86,7 +86,10 @@
                 </div> 
                 <div class="Cta">
                    {% if confirmacion == 'no' %}
-                        <a class="btnConfirm" id="btnConfirm2">Confirmá  <br>  tu asistencia</a>                        
+                       <form role="form" name="form_confirmacion" method="POST" action="">
+                            <a class="btnConfirm" id="btnConfirm2">Confirmá  <br>  tu asistencia</a>                        
+                            <input type="hidden" name="confirmation" id="confirmation" value="si">
+                       </form>
                    {% else %}
                    <div class="btnConfirm">Ya confirmó asistencia, los esperamos!</div>
                    {% endif %}                   
