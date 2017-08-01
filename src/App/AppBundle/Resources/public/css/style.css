@@ -46,6 +46,9 @@
       margin: 0; }
       @media (min-width: 0px) and (max-width: 767px) {
         .top .contCount .titleCount {
+          float: left;
+          margin: 0;
+          padding: 0;
           text-align: center; } }
     @media (min-width: 0px) and (max-width: 767px) {
       .top .contCount .countt {

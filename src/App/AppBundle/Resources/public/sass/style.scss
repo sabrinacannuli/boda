@@ -54,7 +54,9 @@
 			padding: 40px 0px;
 			margin: 0;
             @include mobile {
-                // margin-top:-26px!important;
+                float: left;
+			    margin: 0;
+			    padding: 0;
                 text-align:center;
             }
 		}
