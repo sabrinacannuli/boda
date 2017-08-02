@@ -4,6 +4,9 @@
     <link rel="stylesheet" href="{{asset('bundles/app/css/style.css.map')}}">
 {% endblock %}
 {% block body %}
+{% if msj != "" %}
+{{msj}}
+{% endif %}
     <div class="container-fluid">
     	<div class="row">
             <section class="top">
@@ -86,9 +89,9 @@
                 </div> 
                 <div class="Cta">
                    {% if confirmacion == 'no' %}
-                       <form role="form" name="form_confirmacion" method="POST" action="">
-                            <a class="btnConfirm" id="btnConfirm2">Confirmá  <br>  tu asistencia</a>                        
-                            <input type="hidden" name="confirmation" id="confirmation" value="si">
+                       <form role="form" name="form_confirmacion" method="post" action="{{path('app_confirmation')}}">
+                            <button class="btnConfirm" type="submit" id="btnConfirm2" value="si">Confirmá<br>tu asistencia</button>
+                            <input type="hidden" name="nombre" value="{{nombreCompleto}}">
                        </form>
                    {% else %}
                    <div class="btnConfirm">Ya confirmó asistencia, los esperamos!</div>
@@ -202,15 +205,15 @@
                 },1000);
             
         });
-        $(document).ready(function() {
-            $('#btnConfirm2').click(function(){
-                var dataString = 'id='+service;
-                $.ajax({
-                    type: "GET",
-                    url: "includes/update.php",
-                    data: dataString,
-                });
-            });                 
-        });   
+        // $(document).ready(function() {
+        //     $('#btnConfirm2').click(function(){
+        //         var dataString = 'id='+service;
+        //         $.ajax({
+        //             type: "GET",
+        //             url: "includes/update.php",
+        //             data: dataString,
+        //         });
+        //     });                 
+        // });   
 	</script>
 {% endblock %}
