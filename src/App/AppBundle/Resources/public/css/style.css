@@ -137,9 +137,6 @@
       background: #ffcc66;
       border-radius: 13px;
       font-family: 'helvetica'; }
-    @media (min-width: 1025px) and (max-width: 1349px) {
-      .top .welcome .ctaConfirm {
-        display: none !important; } }
     @media (min-width: 768px) and (max-width: 1024px) {
       .top .welcome .ctaConfirm {
         display: none !important; } }

@@ -165,9 +165,6 @@
 				border-radius: 13px;
 				font-family: 'helvetica';
 			}
-            @include desktop {
-                display:none!important;
-            }
             @include tablet {
                 display:none!important;
             }
