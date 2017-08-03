@@ -16,14 +16,14 @@ class DefaultController extends Controller
     {        
         $em = $this->getDoctrine()->getManager();
                
-        $invitados = $em->getRepository('AppBundle:Invitados')->findByNombreCompleto($nombre);
+        $invitados = $em->getRepository('AppBundle:Invitados')->findOneByNombreCompleto($nombre);
         $request = $this->getRequest();
         $nameRouting = $request->get('nombre');
         $nombreCompleto = $request->get('nombreCompleto');
 
-        $alias=$invitados[0]->getAlias();
-        $nombreCompleto=$invitados[0]->getNombreCompleto();
-        $confirmacion=$invitados[0]->getConfirmacion();
+        $alias=$invitados->getAlias();
+        $nombreCompleto=$invitados->getNombreCompleto();
+        $confirmacion=$invitados->getConfirmacion();
 
         if($confirmacion == 'si'){
             $msj = "Gracias por confirmar tu asistencia, te esperamos!";
@@ -31,32 +31,41 @@ class DefaultController extends Controller
             $msj = "";
         }
         
+        if($request->get('modal') == 'show'){
+            $modal = $request->get('modal');
+        }else{
+            $modal = 'hide';
+        }
         return $this->render('AppBundle:Default:index.html.twig', array(
             'nombre' => $alias,
             'nombreCompleto' => $nombreCompleto,
             'confirmacion' => $confirmacion,
-            'msj'=> $msj
+            'msj'=> $msj,
+            'modal'=>$modal
         ));
     }
     public function confirmAction()
     {        
         $request = $this->getRequest();
-        $nombre = $_POST['nombre']
+        $nombre = $_POST['nombre'];
+        
         $em = $this->getDoctrine()->getEntityManager();
-        $invitados = $em->getRepository('AppBundle:Invitados')->findByNombreCompleto($nombre);
-        $alias=$invitados[0]->getAlias();
-        $nombreCompleto=$invitados[0]->getNombreCompleto();
-        $confirmacion=$invitados[0]->getConfirmacion();
+        $invitados = $em->getRepository('AppBundle:Invitados')->findOneByNombreCompleto($nombre);
+        
+        $alias=$invitados->getAlias();
+        $nombreCompleto=$invitados->getNombreCompleto();
+        $confirmacion=$invitados->getConfirmacion();
         
        
         if ($request->getMethod() == 'POST') {
 
             $em = $this->getDoctrine()->getEntityManager();
-            $invitados->upload();
+            $invitados = $em->getRepository('AppBundle:Invitados')->findOneByNombreCompleto($nombre);
+            // var_dump($invitados);
             $invitados->setConfirmacion("si");
             $em->persist($invitados);
             $em->flush();                
         }
-        return $this->redirect($this->generateUrl('redirect_ok', array('nombre'=>$nombre)));
+        return $this->redirect($this->generateUrl('app_homepage2', array('nombre'=>$nombre,'modal'=>'show')));
     }
 }
