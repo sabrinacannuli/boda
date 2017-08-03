@@ -12,7 +12,7 @@ use App\AppBundle\Entity\Invitados;
 
 class DefaultController extends Controller
 {
-    public function indexAction($nombre)
+    public function indexAction($nombre = null)
     {        
         $em = $this->getDoctrine()->getManager();
                
@@ -20,10 +20,19 @@ class DefaultController extends Controller
         $request = $this->getRequest();
         $nameRouting = $request->get('nombre');
         $nombreCompleto = $request->get('nombreCompleto');
-
-        $alias=$invitados->getAlias();
-        $nombreCompleto=$invitados->getNombreCompleto();
-        $confirmacion=$invitados->getConfirmacion();
+        $alias = '';
+if(!$invitados)        
+{
+    $alias = '';
+    $nombreCompleto= '';
+    $confirmacion = '';
+}else{
+    $alias = $invitados->getAlias();
+    $nombreCompleto=$invitados->getNombreCompleto();
+    $confirmacion=$invitados->getConfirmacion();
+}
+        
+        
 
         if($confirmacion == 'si'){
             $msj = "Gracias por confirmar tu asistencia ¡Te esperamos!";
