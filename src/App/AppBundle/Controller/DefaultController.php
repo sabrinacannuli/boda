@@ -26,7 +26,7 @@ class DefaultController extends Controller
         $confirmacion=$invitados->getConfirmacion();
 
         if($confirmacion == 'si'){
-            $msj = "Gracias por confirmar tu asistencia, te esperamos!";
+            $msj = "Gracias por confirmar tu asistencia ¡Te esperamos!";
         }else{
             $msj = "";
         }
