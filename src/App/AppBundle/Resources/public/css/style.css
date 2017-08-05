@@ -20,12 +20,15 @@
   max-height: 640px;
   overflow: hidden; }
   .top img {
-    margin-top: -60px;
+    margin-top: 0;
     width: 100%; }
     @media (min-width: 0px) and (max-width: 767px) {
       .top img {
         margin-top: 0px !important;
-        border-bottom: 4px solid #FCC949; } }
+        border-bottom: 4px solid #FCC949;
+        height: 180px;
+        width: 100%;
+        object-fit: cover; } }
   .top .contCount {
     position: absolute;
     bottom: 0px;
@@ -82,11 +85,12 @@
           left: 0; } }
       .top .welcome .sya p {
         font-family: 'Sacramento';
-        color: white;
+        color: black;
         text-align: center;
         font-size: 50px; }
         @media (min-width: 0px) and (max-width: 767px) {
           .top .welcome .sya p {
+            color: white;
             text-shadow: 1px 2px 3px black; } }
       .top .welcome .sya p:before {
         background-image: url("../images/line01.png");
@@ -205,17 +209,20 @@
     margin-right: -15px;
     position: absolute;
     width: 100%;
-    top: -50%;
+    top: 0;
     z-index: -10; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .confirmAsist .background {
         top: 0%; } }
     @media (min-width: 0px) and (max-width: 767px) {
       .confirmAsist .background {
+        width: auto;
+        height: 100%;
+        left: -315px;
         top: 0%; } }
   .confirmAsist .text {
     z-index: 200;
-    margin: 0 auto;
+    margin: 0;
     width: 60%; }
     @media (min-width: 0px) and (max-width: 767px) {
       .confirmAsist .text {
@@ -234,7 +241,7 @@
       margin-top: 10px;
       width: 50%; }
   .confirmAsist .Cta {
-    margin: 10% auto 0 auto;
+    margin: 8% 18%;
     background: rgba(255, 204, 102, 0.8);
     border-radius: 13px;
     overflow: hidden;
@@ -242,6 +249,7 @@
     padding: 20px; }
     @media (min-width: 0px) and (max-width: 767px) {
       .confirmAsist .Cta {
+        margin: 8% 27%;
         width: 160px;
         padding: 10px;
         margin-top: 63px; } }
@@ -393,13 +401,23 @@ footer {
     transform: rotate(180deg); }
   footer .saludo {
     position: absolute;
-    bottom: 30px;
+    bottom: 120px;
     margin: 0 auto;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    margin-left: 50px;
+    color: black; }
+    @media (min-width: 0px) and (max-width: 767px) {
+      footer .saludo {
+        bottom: 110px;
+        margin-left: 0px;
+        color: white; } }
     footer .saludo img {
       width: 13%;
       margin: 0 auto; }
+      @media (min-width: 0px) and (max-width: 767px) {
+        footer .saludo img {
+          display: none; } }
     footer .saludo p {
       font-family: 'Sacramento';
       font-size: 80px;
