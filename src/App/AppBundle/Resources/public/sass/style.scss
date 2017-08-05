@@ -256,9 +256,8 @@
                 top: 0%;
             }
             @include mobile {
-            	width: auto;
+            	
 			    height: 100%;
-			    left: -170px;
                 top: 0%;
             }
 	}
@@ -266,6 +265,7 @@
 		z-index: 200;
 		margin: 0;
 		width: 60%;
+                float:right;
                 @include mobile {
                     width:100%;
                 }
@@ -277,7 +277,7 @@
 			color: white;
 			font-family: 'futura-light';
                         @include mobile {
-                            font-size:20px;
+                            font-size:18px;
                         }
 		}
 		img{
@@ -295,8 +295,9 @@
 		overflow: hidden;
 		width: 25%;
 		padding: 20px;
+                float:right;
         @include mobile {
-			margin: 8% 27%;
+            margin: 8% 27%;
             width: 160px;
             padding: 10px;
             margin-top:63px;

@@ -216,14 +216,13 @@
         top: 0%; } }
     @media (min-width: 0px) and (max-width: 767px) {
       .confirmAsist .background {
-        width: auto;
         height: 100%;
-        left: -170px;
         top: 0%; } }
   .confirmAsist .text {
     z-index: 200;
     margin: 0;
-    width: 60%; }
+    width: 60%;
+    float: right; }
     @media (min-width: 0px) and (max-width: 767px) {
       .confirmAsist .text {
         width: 100%; } }
@@ -236,7 +235,7 @@
       font-family: 'futura-light'; }
       @media (min-width: 0px) and (max-width: 767px) {
         .confirmAsist .text h2 {
-          font-size: 20px; } }
+          font-size: 18px; } }
     .confirmAsist .text img {
       margin-top: 10px;
       width: 50%; }
@@ -249,7 +248,8 @@
     border-radius: 13px;
     overflow: hidden;
     width: 25%;
-    padding: 20px; }
+    padding: 20px;
+    float: right; }
     @media (min-width: 0px) and (max-width: 767px) {
       .confirmAsist .Cta {
         margin: 8% 27%;
