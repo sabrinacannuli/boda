@@ -431,7 +431,8 @@ footer {
           font-size: 60px; } }
       @media (min-width: 0px) and (max-width: 767px) {
         footer .saludo p {
-          font-size: 60px; } }
+          font-size: 60px;
+          margin: 0px 0 -81px; } }
 
 .modal .modal-content {
   height: 50%;
