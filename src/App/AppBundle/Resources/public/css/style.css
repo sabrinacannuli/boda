@@ -235,7 +235,8 @@
       font-family: 'futura-light'; }
       @media (min-width: 0px) and (max-width: 767px) {
         .confirmAsist .text h2 {
-          font-size: 18px; } }
+          font-size: 18px;
+          font-weight: bold; } }
     .confirmAsist .text img {
       margin-top: 10px;
       width: 50%; }
